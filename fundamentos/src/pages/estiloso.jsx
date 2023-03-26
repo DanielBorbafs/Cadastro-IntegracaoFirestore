@@ -1,5 +1,4 @@
-import styles from './Estiloso.module.css'
-
+import styles from '../styles/Estiloso.module.css'
 
 export default function Estiloso() {
     return (
