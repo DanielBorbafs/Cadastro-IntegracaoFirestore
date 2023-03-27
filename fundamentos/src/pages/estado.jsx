@@ -1,15 +1,13 @@
 import Layout from "../components/Layout";
+import { useState } from "react";
 
 
 export default function Estado() {
     
-    const state = useSate(0)
-    
-    let numero = state[0]
-    let alterarNumero = state[1]
+    const [numero, setNumero] = useState(0)
 
     function incrementar() {
-        alterarNumero(numero + 1 )
+        setNumero(numero + 1 )
     }
     return (
         <Layout titulo = "Componente com estado">
